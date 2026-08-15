@@ -8,18 +8,18 @@
 
 ## 👋 关于我 · About Me
 
-- 🎓 **16 岁，上海高中生** —— 作业写完才开机，代码都在深夜和周末生长。
+- 🎓 **16 岁，上海高中生** —— 作业写完才开机，代码都在深夜和周末生长。<br>
   A 16-year-old high schooler in Shanghai — most of my code grows after homework, on weekends and at midnight.
-- 🤖 **我关注的命题**：让 AI 像工程师一样对待自己的代码——计划、评审、修复、验证、回环，而不是一次生成听天由命。
+- 🤖 **我关注的命题**：让 AI 像工程师一样对待自己的代码——计划、评审、修复、验证、回环，而不是一次生成听天由命。<br>
   My obsession: making AI treat its own code like an engineer — plan, review, fix, verify, and loop — not write-once-and-pray.
-- 🛠️ **[iterate](https://github.com/jingzhao-l/iterate-skill) 生态作者**：一套围绕「多轮审查-修复闭环」的工具体系，见下方三件套。
+- 🛠️ **[iterate](https://github.com/jingzhao-l/iterate-skill) 生态作者**：一套围绕「多轮审查-修复闭环」的工具体系，见下方三件套。<br>
   Author of the **iterate** ecosystem — a toolchain built around the multi-round review-fix loop.
-- 🔭 **正在造一个更大的东西**：一个大型 agent harness 项目，还在抽屉里。
+- 🔭 **正在造一个更大的东西**：一个大型 agent harness 项目，还在抽屉里。<br>
   Building something bigger: a large-scale agent harness project — still in the drawer.
 
 ## 🚀 iterate 生态 · The iterate Ecosystem
 
-一句话：**把「AI 写完就走」变成「AI 自己审、自己改、自己验证」**。
+一句话：**把「AI 写完就走」变成「AI 自己审、自己改、自己验证」**。<br>
 One line: turning "AI writes and prays" into "AI reviews, fixes and verifies its own work — round after round".
 
 | 仓库 · Repo | 是什么 · What it is |
@@ -28,7 +28,7 @@ One line: turning "AI writes and prays" into "AI reviews, fixes and verifies its
 | ⚙️ **[iterate-harness](https://github.com/jingzhao-l/iterate-harness)** | 无头自治引擎（`ih` CLI + React TUI）：CI/PR 模式、成本计量、阈值门禁、中途干预<br>Headless autonomous engine: CI/PR mode, cost metering, threshold gates, mid-run intervention |
 | 🖥️ **[iterate-plugin](https://github.com/jingzhao-l/iterate-plugin)** | 桌面插件：收敛仪表盘、逐轮进度、实时干预<br>Desktop plugin: convergence dashboard, round-by-round progress, live intervention |
 
-三者共享同一套 `iterate.config.yaml` 与维度体系 —— **skill 给对话，harness 给 CI，plugin 给桌面**。
+三者共享同一套 `iterate.config.yaml` 与维度体系 —— **skill 给对话，harness 给 CI，plugin 给桌面**。<br>
 All three share one config and one dimension system — **skill for chat, harness for CI, plugin for desktop**.
 
 ## 🛠️ 技术栈 · Tech Stack
@@ -38,14 +38,13 @@ All three share one config and one dimension system — **skill for chat, harnes
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-191919?style=flat-square&logo=anthropic&logoColor=white)
 
 ## 📊 统计 · Stats
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jingzhao-l&show_icons=true&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jingzhao-l&layout=compact&hide_border=true)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=github)
+![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=github)
 
 </div>
 
