@@ -22,6 +22,15 @@
 一句话：**把「AI 写完就走」变成「AI 自己审、自己改、自己验证」**。<br>
 One line: turning "AI writes and prays" into "AI reviews, fixes and verifies its own work — round after round".
 
+<div align="center">
+
+<img src="assets/iterate-tui.svg" alt="iterate-harness TUI convergence panel" width="880">
+
+<sub>iterate-harness 的收敛面板：5 轮把 18 个 findings 清到 0，每个维度精确计费<br>
+The iterate-harness convergence panel: 18 findings driven to zero in 5 rounds, with exact per-dimension billing</sub>
+
+</div>
+
 | 仓库 · Repo | 是什么 · What it is |
 |---|---|
 | 🧠 **[iterate-skill](https://github.com/jingzhao-l/iterate-skill)** | 面向对话式 agent 的多轮审查-修复技能：9 维度评审、双轨修复、决策日志、项目知识库<br>A skill for conversational agents: 9-dimension review, dual-track fixes, decision log, project knowledge base |

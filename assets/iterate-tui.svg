@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="103" viewBox="0 0 1935 227" font-family="SF Mono, Menlo, Consolas, Liberation Mono, monospace">
+<rect x="0.5" y="0.5" width="1934" height="226" rx="10" fill="#0d1117" stroke="#30363d"/>
+<circle cx="24" cy="24" r="6" fill="#ff5f57"/>
+<circle cx="44" cy="24" r="6" fill="#febc2e"/>
+<circle cx="64" cy="24" r="6" fill="#28c840"/>
+<text x="967.5" y="29" text-anchor="middle" font-size="12.5" fill="#8b949e">ih — iterate-harness</text>
+<line x1="1" y1="40" x2="1934" y2="40" stroke="#21262d"/>
+<text x="22" y="61" font-size="13.2"><tspan fill="#3fb950" font-weight="bold">$</tspan><tspan fill="#e6edf3"> ih iterate run </tspan><tspan fill="#8b949e">--dry-run</tspan><tspan fill="#e6edf3"> --rounds 5</tspan></text>
+<text x="22" y="99" font-size="13.2">
+<tspan x="22.0" fill="#e6edf3">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮</tspan>
+</text>
+<text x="22" y="118" font-size="13.2">
+<tspan x="22.0" fill="#e6edf3">│</tspan>
+<tspan x="30.1" fill="#e6edf3" font-weight="bold"> </tspan>
+<tspan x="38.1" fill="#e6edf3" font-weight="bold">◉ converged </tspan>
+<tspan x="134.7" fill="#8b949e" font-weight="bold">Iterate Review </tspan>
+<tspan x="255.5" fill="#e6edf3">[dry-run] round 5 · </tspan>
+<tspan x="416.5" fill="#e6edf3">+0 findings</tspan>
+<tspan x="505.0" fill="#e6edf3"> (18 total) · $0.4213</tspan>
+<tspan x="674.1" fill="#3fb950">                                      </tspan>
+<tspan x="980.0" fill="#e6edf3">│</tspan>
+</text>
+<text x="22" y="137" font-size="13.2">
+<tspan x="22.0" fill="#e6edf3">│</tspan>
+<tspan x="30.1" fill="#8b949e"> </tspan>
+<tspan x="38.1" fill="#e6edf3">trend </tspan>
+<tspan x="86.4" fill="#e6edf3">9</tspan>
+<tspan x="94.5" fill="#e6edf3">→</tspan>
+<tspan x="102.5" fill="#e6edf3">5</tspan>
+<tspan x="110.5" fill="#e6edf3">→</tspan>
+<tspan x="118.6" fill="#e6edf3">3</tspan>
+<tspan x="126.6" fill="#e6edf3">→</tspan>
+<tspan x="134.7" fill="#e6edf3">1</tspan>
+<tspan x="142.8" fill="#e6edf3">→</tspan>
+<tspan x="150.8" fill="#e6edf3">0</tspan>
+<tspan x="158.9" fill="#3fb950">                                                                                                      </tspan>
+<tspan x="980.0" fill="#e6edf3">│</tspan>
+</text>
+<text x="22" y="156" font-size="13.2">
+<tspan x="22.0" fill="#e6edf3">│</tspan>
+<tspan x="30.1" fill="#8b949e"> </tspan>
+<tspan x="38.1" fill="#e6edf3">architecture</tspan>
+<tspan x="134.7" fill="#e6edf3">0</tspan>
+<tspan x="142.8" fill="#e6edf3"> ~$0.0139 ·correctness  ~$0.0958 ·maintainability</tspan>
+<tspan x="537.2" fill="#e6edf3">0</tspan>
+<tspan x="545.2" fill="#e6edf3"> ~$0.0217 ·performance  ~$0.0412 ·security </tspan>
+<tspan x="891.4" fill="#e6edf3">0</tspan>
+<tspan x="899.5" fill="#e6edf3"> ~$0.1473</tspan>
+<tspan x="971.9" fill="#3fb950"> </tspan>
+<tspan x="980.0" fill="#e6edf3">│</tspan>
+</text>
+<text x="22" y="175" font-size="13.2">
+<tspan x="22.0" fill="#e6edf3">│</tspan>
+<tspan x="30.1" fill="#3fb950">                                                                                                                      </tspan>
+<tspan x="980.0" fill="#e6edf3">│</tspan>
+</text>
+<text x="22" y="194" font-size="13.2">
+<tspan x="22.0" fill="#e6edf3">╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</tspan>
+</text>
+<rect x="22" y="202" width="8" height="15" fill="#3fb950" rx="1"/>
+</svg>
