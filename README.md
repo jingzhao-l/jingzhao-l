@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=Hi%2C%20I%27m%20Jingzhao&fontSize=42&fontAlignY=34&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,3fb950&height=180&text=Hi%2C%20I%27m%20Jingzhao&fontSize=42&fontAlignY=34&animation=fadeIn" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1200&color=8B9DF8&center=true&vCenter=true&width=620&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+AI+that+reviews+its+own+code" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1200&color=3fb950&center=true&vCenter=true&width=620&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+AI+that+reviews+its+own+code" alt="typing" />
 </div>
 
 ## 👋 关于我 · About Me
@@ -42,18 +42,22 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 ## 🛠️ 技术栈 · Tech Stack
 
+<div align="center">
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
+</div>
+
 ## 📊 统计 · Stats
 
 <div align="center">
 
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=github)
-![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=github)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=github_dark)
+![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=github_dark)
 
 </div>
 
@@ -61,4 +65,8 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 <div align="center">
   <sub>⭐ 如果 iterate 帮到了你，欢迎去仓库点个 Star · If iterate helps you, a star means a lot</sub>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,3fb950&height=110&section=footer" width="100%" />
 </div>
