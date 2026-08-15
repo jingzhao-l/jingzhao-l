@@ -25,7 +25,7 @@ One line: turning "AI writes and prays" into "AI reviews, fixes and verifies its
 | 仓库 · Repo | 是什么 · What it is |
 |---|---|
 | 🧠 **[iterate-skill](https://github.com/jingzhao-l/iterate-skill)** | 面向对话式 agent 的多轮审查-修复技能：9 维度评审、双轨修复、决策日志、项目知识库<br>A skill for conversational agents: 9-dimension review, dual-track fixes, decision log, project knowledge base |
-| ⚙️ **[iterate-harness](https://github.com/jingzhao-l/iterate-harness)** | 无头自治引擎（`ih` CLI + React TUI）：CI/PR 模式、成本计量、阈值门禁、中途干预<br>Headless autonomous engine: CI/PR mode, cost metering, threshold gates, mid-run intervention |
+| ⚙️ **[iterate-harness](https://github.com/jingzhao-l/iterate-harness)** | 专为 iterate 打造的 coding harness（`ih` CLI + React TUI）：在 CI/PR 里无人值守地跑完整审查-修复闭环，含成本计量与阈值门禁<br>A coding harness purpose-built for iterate: runs the full review-fix loop unattended in CI/PR, with cost metering and threshold gates |
 | 🖥️ **[iterate-plugin](https://github.com/jingzhao-l/iterate-plugin)** | 桌面插件：收敛仪表盘、逐轮进度、实时干预<br>Desktop plugin: convergence dashboard, round-by-round progress, live intervention |
 
 三者共享同一套 `iterate.config.yaml` 与维度体系 —— **skill 给对话，harness 给 CI，plugin 给桌面**。<br>
