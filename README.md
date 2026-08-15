@@ -52,8 +52,8 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 <div align="center">
 
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=tokyonight)
-![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=tokyonight)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=tokyonight&v=2)
+![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=tokyonight&v=2)
 
 </div>
 
@@ -67,8 +67,4 @@ All three share one config and one dimension system — **skill for chat, harnes
 <br><br>
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&color=0d1117,16123a,312e81,8b5cf6&section=footer" width="100%" />
 
-</div>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,3fb950&height=110&section=footer" width="100%" />
 </div>

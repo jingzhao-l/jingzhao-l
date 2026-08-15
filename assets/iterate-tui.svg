@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="103" viewBox="0 0 1935 227" font-family="SF Mono, Menlo, Consolas, Liberation Mono, monospace">
-<defs><linearGradient id="bggrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#090d13"/></linearGradient></defs><defs><filter id="glow" x="-5%" y="-5%" width="110%" height="115%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#3fb950" flood-opacity="0.13"/></filter></defs><rect x="0.5" y="0.5" width="1934" height="226" rx="10" fill="url(#bggrad)" filter="url(#glow)" stroke="#30363d"/><rect x="2" y="2" width="1931" height="38" rx="9" fill="#161b22"/>
+<defs><linearGradient id="bggrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#090d13"/></linearGradient></defs><defs><filter id="glow" x="-5%" y="-5%" width="110%" height="115%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#8b5cf6" flood-opacity="0.13"/></filter></defs><rect x="0.5" y="0.5" width="1934" height="226" rx="10" fill="url(#bggrad)" filter="url(#glow)" stroke="#30363d"/><rect x="2" y="2" width="1931" height="38" rx="9" fill="#161b22"/>
 <circle cx="24" cy="24" r="6" fill="#ff5f57"/>
 <circle cx="44" cy="24" r="6" fill="#febc2e"/>
 <circle cx="64" cy="24" r="6" fill="#28c840"/>
