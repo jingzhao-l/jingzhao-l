@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0d1117,16123a,312e81,8b5cf6&text=Hi%2C%20I%27m%20Jingzhao&fontSize=54&fontColor=e6edf3&fontAlignY=36&desc=16%20y%2Fo%20%C2%B7%20Shanghai%20%C2%B7%20building%20iterate&descSize=20&descColor=8b949e&descAlignY=56&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0d1117,0d2137,14532d,3fb950&text=Hi%2C%20I%27m%20Jingzhao&fontSize=54&fontColor=e6edf3&fontAlignY=36&desc=16%20y%2Fo%20%C2%B7%20Shanghai%20%C2%B7%20building%20iterate&descSize=20&descColor=8b949e&descAlignY=56&animation=fadeIn" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1300&color=a78bfa&center=true&vCenter=true&width=700&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+AI+that+reviews+its+own+code" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1300&color=3fb950&center=true&vCenter=true&width=700&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+AI+that+reviews+its+own+code" alt="typing" />
 </div>
 
 ## 👋 关于我 · About Me
@@ -52,8 +52,8 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 <div align="center">
 
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=tokyonight&v=2)
-![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=tokyonight&v=2)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=chartreuse-dark&v=3)
+![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=chartreuse-dark&v=3)
 
 </div>
 
@@ -61,10 +61,10 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=jingzhao-l&style=flat-square&color=8b5cf6&label=visitors" alt="visitors">
+<img src="https://komarev.com/ghpvc/?username=jingzhao-l&style=flat-square&color=3fb950&label=visitors" alt="visitors">
 <br><br>
 <sub>⭐ 如果 iterate 帮到了你，欢迎去仓库点个 Star · If iterate helps you, a star means a lot</sub>
 <br><br>
-<img src="https://capsule-render.vercel.app/api?type=waving&height=110&color=0d1117,16123a,312e81,8b5cf6&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=110&color=0d1117,0d2137,14532d,3fb950&section=footer" width="100%" />
 
 </div>
