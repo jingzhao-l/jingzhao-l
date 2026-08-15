@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,3fb950&height=180&text=Hi%2C%20I%27m%20Jingzhao&fontSize=42&fontAlignY=34&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0d1117,0d2137,14532d,3fb950&text=Hi%2C%20I%27m%20Jingzhao&fontSize=54&fontColor=e6edf3&fontAlignY=36&desc=16%20y%2Fo%20%C2%B7%20Shanghai%20%C2%B7%20building%20iterate&descSize=20&descColor=8b949e&descAlignY=56&animation=fadeIn" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1200&color=3fb950&center=true&vCenter=true&width=620&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+AI+that+reviews+its+own+code" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1300&color=3fb950&center=true&vCenter=true&width=700&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+AI+that+reviews+its+own+code" alt="typing" />
 </div>
 
 ## 👋 关于我 · About Me
@@ -44,11 +44,7 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+<img src="https://skillicons.dev/icons?i=py,ts,react,nodejs,githubactions&theme=dark" alt="stack">
 
 </div>
 
@@ -56,15 +52,21 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 <div align="center">
 
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=github_dark)
-![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=github_dark)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jingzhao-l&theme=chartreuse-dark)
+![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jingzhao-l&theme=chartreuse-dark)
 
 </div>
 
 ---
 
 <div align="center">
-  <sub>⭐ 如果 iterate 帮到了你，欢迎去仓库点个 Star · If iterate helps you, a star means a lot</sub>
+
+<img src="https://komarev.com/ghpvc/?username=jingzhao-l&style=flat-square&color=3fb950&label=visitors" alt="visitors">
+<br><br>
+<sub>⭐ 如果 iterate 帮到了你，欢迎去仓库点个 Star · If iterate helps you, a star means a lot</sub>
+<br><br>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=110&color=0d1117,0d2137,14532d,3fb950&section=footer" width="100%" />
+
 </div>
 
 <div align="center">
