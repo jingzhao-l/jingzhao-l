@@ -40,6 +40,12 @@ The iterate-harness convergence panel: 18 findings driven to zero in 5 rounds, w
 三者共享同一套 `iterate.config.yaml` 与维度体系 —— **skill 给对话，harness 给 CI，plugin 给桌面**。<br>
 All three share one config and one dimension system — **skill for chat, harness for CI, plugin for desktop**.
 
+**一键安装 · One-liner install**<br>
+
+- 🧠 skill → `npx iterate-skill-installer`
+- ⚙️ harness → `npm install -g iterate-harness` 或 `pip install iterate-harness`
+- 🖥️ plugin → `dsh plugin --profile web add github:jingzhao-l/iterate-plugin#main`
+
 ## 🛠️ 技术栈 · Tech Stack
 
 <div align="center">
@@ -47,6 +53,18 @@ All three share one config and one dimension system — **skill for chat, harnes
 <img src="https://skillicons.dev/icons?i=py,ts,react,nodejs,githubactions&theme=dark" alt="stack">
 
 </div>
+
+## 📥 下载量 · Downloads
+
+近 30 天下载（自动更新 · last month, auto-updated），数据源见 [`downloads.json`](./downloads.json)
+
+| 项目 · Project | 下载 · Downloads |
+|---|---|
+| 🌱 **生态合计 · Ecosystem total** | ![ecosystem-total](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=total&label=iterate%20total&color=22d3ee) |
+| 🧠 iterate-skill（`iterate-skill-installer`） | ![skill](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=skill&label=skill&color=4285F4) |
+| ⚙️ iterate-harness（npm） | ![harness-npm](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=harness_npm&label=harness%20npm&color=CB3837) |
+| ⚙️ iterate-harness（PyPI） | ![harness-pypi](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=harness_pypi&label=harness%20pypi&color=3776AB) |
+| 🖥️ iterate-plugin（npm） | ![plugin](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=plugin&label=plugin&color=CB3837) |
 
 ## 📊 统计 · Stats
 

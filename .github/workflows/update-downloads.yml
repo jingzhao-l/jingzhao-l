@@ -1,0 +1,37 @@
+name: Update downloads
+
+on:
+  schedule:
+    # Refresh downloads.json hourly (top of every hour UTC) for fresher badges
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-downloads:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch ecosystem download counts
+        run: python scripts/update_downloads.py
+
+      - name: Commit and push download data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads.json
+          if git diff --cached --quiet; then
+            echo "No change to downloads.json"
+          else
+            git commit -m "chore: refresh ecosystem download counts"
+            git push
+          fi
