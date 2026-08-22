@@ -56,7 +56,7 @@ All three share one config and one dimension system — **skill for chat, harnes
 
 ## 📥 下载量 · Downloads
 
-近 30 天下载（自动更新 · last month, auto-updated），数据源见 [`downloads.json`](./downloads.json)
+全渠道累计下载（自动更新 · all-time, auto-updated），数据源见 [`downloads.json`](./downloads.json)
 
 | 项目 · Project | 下载 · Downloads |
 |---|---|

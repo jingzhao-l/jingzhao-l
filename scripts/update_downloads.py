@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Fetch last-30-day download counts across the whole iterate ecosystem.
+"""Fetch all-time (cumulative) download counts across the whole iterate ecosystem.
 
 Aggregates the four channel counts into ``downloads.json`` at the repository
 root, which drives the profile README "Downloads" badges via shields.io's
-dynamic/json endpoint:
+dynamic/json endpoint. Every value is a cumulative (all-time) count:
 
-* skill        -- npm installer ``iterate-skill-installer`` (last month)
-* harness_npm  -- npm ``iterate-harness`` (last month)
-* harness_pypi -- PyPI ``iterate-harness`` (last month)
-* plugin       -- npm ``iterate-plugin`` (last month)
+* skill        -- aggregate of ClawHub + SkillHub + npm installer (read from the
+                  iterate-skill repository's own ``badges/downloads.json`` "total")
+* harness_npm  -- npm ``iterate-harness`` (all-time)
+* harness_pypi -- PyPI ``iterate-harness`` (all-time, summed over daily history)
+* plugin       -- npm ``iterate-plugin`` (all-time)
 * total        -- sum of the four
 
 Only writes the file when a full set of four counts can be resolved. When an
@@ -31,23 +32,31 @@ USER_AGENT = "jingzhao-l-profile-downloads/1.0 (+https://github.com/jingzhao-l/j
 TIMEOUT_SECONDS = 20
 _MAX_RESPONSE_BYTES = 5 * 1024 * 1024  # 5 MiB cap on a JSON download-count payload
 
-# source -> (API url, JSON path to the last-month download count)
+PYPI_OVERALL_SUM = "pypi_overall_sum"
+
+# source -> (API url, JSON path to the count, extraction mode)
+# mode "int" reads the int at ``path``; mode PYPI_OVERALL_SUM sums the ``data``
+# list returned by pypistats' ``/overall`` endpoint into an all-time total.
 SOURCES = {
     "skill": (
-        "https://api.npmjs.org/downloads/point/last-month/iterate-skill-installer",
-        ("downloads",),
+        "https://raw.githubusercontent.com/jingzhao-l/iterate-skill/main/badges/downloads.json",
+        ("total",),
+        "int",
     ),
     "harness_npm": (
-        "https://api.npmjs.org/downloads/point/last-month/iterate-harness",
+        "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/iterate-harness",
         ("downloads",),
+        "int",
     ),
     "harness_pypi": (
-        "https://pypistats.org/api/packages/iterate-harness/recent",
-        ("data", "last_month"),
+        "https://pypistats.org/api/packages/iterate-harness/overall",
+        (),
+        PYPI_OVERALL_SUM,
     ),
     "plugin": (
-        "https://api.npmjs.org/downloads/point/last-month/iterate-plugin",
+        "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/iterate-plugin",
         ("downloads",),
+        "int",
     ),
 }
 
@@ -63,9 +72,29 @@ def _nested_get(payload: object, path: tuple[str, ...]) -> object | None:
 
 
 def extract_count(source: str, payload: object) -> int | None:
-    """Extract a non-negative int download count from a raw API payload."""
+    """Extract a non-negative int download count from a raw API payload.
+
+    For ``pypi_overall_sum`` mode the payload is pypistats' ``/overall``
+    document and every ``data`` row's ``downloads`` field is summed.
+    """
     if not isinstance(payload, dict):
         return None
+    mode = SOURCES[source][2]
+    if mode == PYPI_OVERALL_SUM:
+        rows = payload.get("data")
+        if not isinstance(rows, list):
+            return None
+        total = 0
+        for row in rows:
+            if not isinstance(row, dict) or "downloads" not in row:
+                return None
+            value = row["downloads"]
+            if isinstance(value, bool) or not isinstance(value, int):
+                return None
+            if value < 0:
+                return None
+            total += value
+        return total
     value = _nested_get(payload, SOURCES[source][1])
     if isinstance(value, bool) or not isinstance(value, int):
         return None
