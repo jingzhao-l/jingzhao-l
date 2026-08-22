@@ -194,7 +194,7 @@ def write_output(path: str, data: dict[str, object]) -> None:
 def main() -> int:
     previous = read_previous(DOWNLOADS_FILE)
     fetched: dict[str, object] = {}
-    for source, (url, _) in SOURCES.items():
+    for source, (url, _, _) in SOURCES.items():
         try:
             fetched[source] = fetch_json(url)
         except (OSError, ValueError) as exc:  # network/decode failures must not break the run
