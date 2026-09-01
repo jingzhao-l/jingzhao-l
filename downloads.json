@@ -4,8 +4,5 @@
   "harness_pypi": 2930,
   "plugin": 3729,
   "total": 18743,
-  "updatedAt": "2026-09-01T21:31:13+00:00",
-  "warnings": [
-    "harness_pypi: upstream unavailable/invalid, reused previous value 2930"
-  ]
+  "updatedAt": "2026-09-01T23:38:26+00:00"
 }
