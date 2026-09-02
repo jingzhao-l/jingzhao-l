@@ -1,8 +1,11 @@
 {
-  "skill": 6525,
+  "skill": 6527,
   "harness_npm": 5559,
   "harness_pypi": 2930,
   "plugin": 3729,
-  "total": 18743,
-  "updatedAt": "2026-09-01T23:38:26+00:00"
+  "total": 18745,
+  "updatedAt": "2026-09-02T01:46:31+00:00",
+  "warnings": [
+    "harness_pypi: upstream unavailable/invalid, reused previous value 2930"
+  ]
 }
