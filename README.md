@@ -10,14 +10,12 @@
 
 - 🎓 **16 岁，上海高中生** —— 作业写完才开机，代码都在深夜和周末生长。<br>
   A 16-year-old high schooler in Shanghai — most of my code grows after homework, on weekends and at midnight.
-- 🤖 **我关注的两个问题**：让 AI 像工程师一样对待自己的代码——计划、评审、修复、验证、回环；以及让它**说到做到**——一句"界面变了"必须留下可回放的证据。<br>
-  The two problems I care about: making AI treat its own code like an engineer — plan, review, fix, verify, loop — and making it *prove* what it claims, with replayable evidence behind every "the UI changed".
-- 🛠️ **[iterate](https://github.com/jingzhao-l/iterate-skill) 生态作者**：围绕「多轮审查-修复闭环」的三件套（skill / harness / plugin），见下方。<br>
-  Author of the **iterate** ecosystem — a three-piece toolchain around the multi-round review-fix loop (skill / harness / plugin).
+- 🤖 **我关注的命题**：让 AI 像工程师一样对待自己的代码——计划、评审、修复、验证、回环，而不是一次生成听天由命。<br>
+  My obsession: making AI treat its own code like an engineer — plan, review, fix, verify, and loop — not write-once-and-pray.
+- 🛠️ **[iterate](https://github.com/jingzhao-l/iterate-skill) 生态作者**：一套围绕「多轮审查-修复闭环」的工具体系，见下方三件套。<br>
+  Author of the **iterate** ecosystem — a toolchain built around the multi-round review-fix loop.
 - 🪟 **[GlassPane](https://github.com/jingzhao-l/GlassPane) 作者**：macOS 上给 AI 代理的运行时验证引擎，Swift 写的，通过 MCP 暴露 `gp_*` 工具。<br>
   Author of **GlassPane** — a runtime verification engine for AI agents on macOS, written in Swift, exposed over MCP.
-- 🔭 **最近在死磕的一件事**：让我的工具无法在"没测到"的情况下报出结论——测试隔离闸、拒绝分支必须真能拒绝、发布可复现。这类缺陷比新功能有意思得多。<br>
-  Currently grinding on: making my tools unable to report a conclusion they never measured — isolation gates in test suites, guard branches that can actually refuse, reproducible releases. Boring, and much more fun than new features.
 
 ## 🚀 iterate 生态 · The iterate Ecosystem
 
