@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
-"""Fetch all-time (cumulative) download counts across the whole iterate ecosystem.
+"""Fetch all-time (cumulative) download counts across both project ecosystems.
 
-Aggregates the four channel counts into ``downloads.json`` at the repository
-root, which drives the profile README "Downloads" badges via shields.io's
-dynamic/json endpoint. Every value is a cumulative (all-time) count:
+Aggregates the iterate and GlassPane channel counts into ``downloads.json`` at
+the repository root, which drives the profile README "Downloads" badges via
+shields.io's dynamic/json endpoint. Every value is a cumulative (all-time)
+count:
 
-* skill        -- aggregate of ClawHub + SkillHub + npm installer (read from the
-                  iterate-skill repository's own ``badges/downloads.json`` "total")
-* harness_npm  -- npm ``iterate-harness`` (all-time)
-* harness_pypi -- PyPI ``iterate-harness`` (all-time, summed over daily history)
-* plugin       -- npm ``iterate-plugin`` (all-time)
-* total        -- sum of the four
+* skill           -- aggregate of ClawHub + SkillHub + npm installer (read from the
+                     iterate-skill repository's own ``badges/downloads.json`` "total")
+* harness_npm     -- npm ``iterate-harness`` (all-time)
+* harness_pypi    -- PyPI ``iterate-harness`` (all-time, summed over daily history)
+* plugin          -- npm ``iterate-plugin`` (all-time)
+* glasspane_mcp   -- npm ``glasspane-mcp`` (all-time)
+* glasspane_install -- npm ``glasspane-install`` (all-time)
+* glasspane_harness -- npm ``glasspane-harness`` (all-time)
+* iterate_total   -- sum of the four iterate channels
+* glasspane_total -- sum of the three GlassPane npm channels
+* total           -- iterate_total + glasspane_total
 
-Only writes the file when a full set of four counts can be resolved. When an
+GlassPane's ``install.sh`` curl installs cannot be counted by any registry, so
+its group total is explicitly npm-only.
+
+Only writes the file when a full set of counts can be resolved. When an
 upstream API is unavailable, the previously committed value is reused (with a
 warning) so the badge never shows a misleading partial sum.
 """
@@ -33,6 +42,9 @@ TIMEOUT_SECONDS = 20
 _MAX_RESPONSE_BYTES = 5 * 1024 * 1024  # 5 MiB cap on a JSON download-count payload
 
 PYPI_OVERALL_SUM = "pypi_overall_sum"
+
+ITERATE_SOURCES = ("skill", "harness_npm", "harness_pypi", "plugin")
+GLASSPANE_SOURCES = ("glasspane_mcp", "glasspane_install", "glasspane_harness")
 
 # source -> (API url, JSON path to the count, extraction mode)
 # mode "int" reads the int at ``path``; mode PYPI_OVERALL_SUM sums the ``data``
@@ -55,6 +67,21 @@ SOURCES = {
     ),
     "plugin": (
         "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/iterate-plugin",
+        ("downloads",),
+        "int",
+    ),
+    "glasspane_mcp": (
+        "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/glasspane-mcp",
+        ("downloads",),
+        "int",
+    ),
+    "glasspane_install": (
+        "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/glasspane-install",
+        ("downloads",),
+        "int",
+    ),
+    "glasspane_harness": (
+        "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/glasspane-harness",
         ("downloads",),
         "int",
     ),
@@ -156,8 +183,12 @@ def resolve_counts(
 
 def build_output(resolved: dict[str, int], warnings: list[str]) -> dict[str, object]:
     """Build the JSON document consumed by the README badges."""
+    iterate_total = sum(resolved[source] for source in ITERATE_SOURCES)
+    glasspane_total = sum(resolved[source] for source in GLASSPANE_SOURCES)
     output: dict[str, object] = dict(resolved)
-    output["total"] = sum(resolved.values())
+    output["iterate_total"] = iterate_total
+    output["glasspane_total"] = glasspane_total
+    output["total"] = iterate_total + glasspane_total
     output["updatedAt"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     if warnings:
         output["warnings"] = warnings
