@@ -114,8 +114,8 @@ It also dogfoods iterate: the `@iterate/kernel` vendored inside GlassPane is the
 
 ## 📥 下载量 · Downloads
 
-全渠道累计下载（每小时自动更新 · all-time, auto-updated），数据源见 [`downloads.json`](./downloads.json)。GlassPane 只统计 npm 渠道，`install.sh` 的 curl 安装无法计数。<br>
-All-time downloads refreshed hourly; the source data is [`downloads.json`](./downloads.json). GlassPane counts npm channels only — `install.sh` curl installs cannot be counted.
+全渠道累计下载（每小时自动更新 · all-time, auto-updated），数据源见 [`downloads.json`](./downloads.json)。GlassPane 只统计 `glasspane-mcp` 和 `glasspane-harness`：`glasspane-install` 只是引导安装 `glasspane-mcp`，`install.sh` 的 curl 安装也无法计数，两者都不重复计入。<br>
+All-time downloads refreshed hourly; the source data is [`downloads.json`](./downloads.json). GlassPane counts only `glasspane-mcp` and `glasspane-harness`: `glasspane-install` merely bootstraps `glasspane-mcp`, and `install.sh` curl installs cannot be counted — neither is added on top.
 
 **总计 · All ecosystems**
 
@@ -139,7 +139,6 @@ All-time downloads refreshed hourly; the source data is [`downloads.json`](./dow
 |---|---|
 | 🪟 **生态合计 · Ecosystem total** | ![glasspane-total](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=glasspane_total&label=glasspane%20total&color=0891b2) |
 | 🪟 glasspane-mcp（npm） | ![glasspane-mcp](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=glasspane_mcp&label=glasspane%20mcp&color=CB3837) |
-| 📦 glasspane-install（npm） | ![glasspane-install](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=glasspane_install&label=glasspane%20install&color=CB3837) |
 | 🤖 glasspane-harness（npm） | ![glasspane-harness](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjingzhao-l%2Fjingzhao-l%2Fmain%2Fdownloads.json&query=glasspane_harness&label=glasspane%20harness&color=CB3837) |
 
 ## 📊 统计 · Stats

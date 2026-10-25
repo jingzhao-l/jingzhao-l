@@ -12,14 +12,15 @@ count:
 * harness_pypi    -- PyPI ``iterate-harness`` (all-time, summed over daily history)
 * plugin          -- npm ``iterate-plugin`` (all-time)
 * glasspane_mcp   -- npm ``glasspane-mcp`` (all-time)
-* glasspane_install -- npm ``glasspane-install`` (all-time)
 * glasspane_harness -- npm ``glasspane-harness`` (all-time)
 * iterate_total   -- sum of the four iterate channels
-* glasspane_total -- sum of the three GlassPane npm channels
+* glasspane_total -- sum of the two counted GlassPane npm channels
 * total           -- iterate_total + glasspane_total
 
-GlassPane's ``install.sh`` curl installs cannot be counted by any registry, so
-its group total is explicitly npm-only.
+``glasspane-install`` is deliberately not counted: it bootstraps a clone that
+installs ``glasspane-mcp``, so counting both would double-count the same users.
+GlassPane's ``install.sh`` curl installs cannot be counted by any registry
+either, so its group total is explicitly npm-only.
 
 Only writes the file when a full set of counts can be resolved. When an
 upstream API is unavailable, the previously committed value is reused (with a
@@ -44,7 +45,7 @@ _MAX_RESPONSE_BYTES = 5 * 1024 * 1024  # 5 MiB cap on a JSON download-count payl
 PYPI_OVERALL_SUM = "pypi_overall_sum"
 
 ITERATE_SOURCES = ("skill", "harness_npm", "harness_pypi", "plugin")
-GLASSPANE_SOURCES = ("glasspane_mcp", "glasspane_install", "glasspane_harness")
+GLASSPANE_SOURCES = ("glasspane_mcp", "glasspane_harness")
 
 # source -> (API url, JSON path to the count, extraction mode)
 # mode "int" reads the int at ``path``; mode PYPI_OVERALL_SUM sums the ``data``
@@ -72,11 +73,6 @@ SOURCES = {
     ),
     "glasspane_mcp": (
         "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/glasspane-mcp",
-        ("downloads",),
-        "int",
-    ),
-    "glasspane_install": (
-        "https://api.npmjs.org/downloads/point/2000-01-01:2100-01-01/glasspane-install",
         ("downloads",),
         "int",
     ),
