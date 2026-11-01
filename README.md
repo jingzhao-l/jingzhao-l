@@ -162,7 +162,7 @@ All-time downloads refreshed hourly; the source data is [`downloads.json`](./dow
 
 | 仓库 · Repo | 一句话 · What it is |
 |---|---|
-| 🐦 [X · Twitter](https://x.com/Jingzhao_lin) | 日常碎片与开发进度 · Daily fragments and build progress |
+| [<img src="https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white" alt="X" height="16"> X](https://x.com/Jingzhao_lin) | 日常碎片与开发进度 · Daily fragments and build progress |
 | 🤝 [agent-collaboration-fabric](https://github.com/jingzhao-l/agent-collaboration-fabric) | 跨平台、本地优先的 AI coding agent 协作层<br>A local-first collaboration layer for AI coding agents across platforms and sessions |
 | 📚 [awesome-claude-skills](https://github.com/jingzhao-l/awesome-claude-skills) | Claude Skills 精选清单<br>A curated list of Claude Skills |
 | 📚 [awesome-dsh-plugin](https://github.com/jingzhao-l/awesome-dsh-plugin) | DeepSeek Harness 插件精选清单<br>A curated list of dsh plugins |
