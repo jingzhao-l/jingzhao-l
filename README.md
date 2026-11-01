@@ -6,6 +6,13 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1300&color=22d3ee&center=true&vCenter=true&width=760&lines=16+y%2Fo+from+Shanghai+%F0%9F%8F%99;coding+between+classes;building+agents+that+have+to+prove+it;iterate+for+code+%C2%B7+GlassPane+for+runtime" alt="typing" />
 </div>
 
+<div align="center">
+
+<a href="https://x.com/Jingzhao_lin"><img src="https://img.shields.io/badge/X-@Jingzhao__lin-000000?style=for-the-badge&logo=x&logoColor=white" alt="X @Jingzhao_lin"></a>
+<a href="https://github.com/jingzhao-l"><img src="https://img.shields.io/badge/GitHub-jingzhao--l-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub jingzhao-l"></a>
+
+</div>
+
 ## 👋 关于我 · About Me
 
 - 🎓 **16 岁，上海高中生** —— 作业写完才开机，代码都在深夜和周末生长。<br>
@@ -155,6 +162,7 @@ All-time downloads refreshed hourly; the source data is [`downloads.json`](./dow
 
 | 仓库 · Repo | 一句话 · What it is |
 |---|---|
+| 🐦 [X · Twitter](https://x.com/Jingzhao_lin) | 日常碎片与开发进度 · Daily fragments and build progress |
 | 🤝 [agent-collaboration-fabric](https://github.com/jingzhao-l/agent-collaboration-fabric) | 跨平台、本地优先的 AI coding agent 协作层<br>A local-first collaboration layer for AI coding agents across platforms and sessions |
 | 📚 [awesome-claude-skills](https://github.com/jingzhao-l/awesome-claude-skills) | Claude Skills 精选清单<br>A curated list of Claude Skills |
 | 📚 [awesome-dsh-plugin](https://github.com/jingzhao-l/awesome-dsh-plugin) | DeepSeek Harness 插件精选清单<br>A curated list of dsh plugins |
