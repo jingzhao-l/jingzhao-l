@@ -1,12 +1,12 @@
 {
-  "skill": 15916,
+  "skill": 16120,
   "harness_npm": 12210,
-  "harness_pypi": 15448,
+  "harness_pypi": 15610,
   "plugin": 11218,
   "glasspane_mcp": 8267,
   "glasspane_harness": 7396,
-  "iterate_total": 54792,
+  "iterate_total": 55158,
   "glasspane_total": 15663,
-  "total": 70455,
-  "updatedAt": "2026-11-10T00:57:09+00:00"
+  "total": 70821,
+  "updatedAt": "2026-11-10T07:57:03+00:00"
 }
